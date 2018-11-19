@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="home_button">开始记录</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+    <string name="share_title">标题:</string>
+</resources>
