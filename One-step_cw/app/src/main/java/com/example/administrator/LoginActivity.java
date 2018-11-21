@@ -66,6 +66,15 @@ public class LoginActivity extends AppCompatActivity{
             }
         });
         Button login = (Button)findViewById(R.id.sign_in);
+        login.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent=new Intent(LoginActivity.this,homePage.class);
+                startActivity(intent);
+            }
+        });
+        /*login.setOnClickListener();
         login.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -73,7 +82,7 @@ public class LoginActivity extends AppCompatActivity{
             {
                 sendMessage();
             }
-        });
+        });*/
     }
     private void sendMessage()
     {
