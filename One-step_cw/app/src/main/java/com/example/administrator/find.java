@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class find extends Fragment {
+public class find extends Fragment implements View.OnTouchListener {
 
     private EditText start_time;
     private EditText end_time;
@@ -54,8 +54,8 @@ public class find extends Fragment {
 
         start_time=(EditText)view.findViewById(R.id.start_time);
         end_time=(EditText)view.findViewById(R.id.end_time);
-        //start_time.setOnTouchListener(this);
-       // end_time.setOnTouchListener(this);
+        start_time.setOnTouchListener(this);
+        end_time.setOnTouchListener(this);
         return view;
     }
 

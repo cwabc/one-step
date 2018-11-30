@@ -70,7 +70,7 @@
                             <CheckedTextView
                                 android:layout_width="60dp"
                                 android:layout_height="match_parent"
-                                android:text="乡村"
+                                android:text="美食"
                                 android:gravity="center"
                                 android:textColor="#000000"/>
                         </LinearLayout>
@@ -86,7 +86,7 @@
                             <CheckedTextView
                                 android:layout_width="60dp"
                                 android:layout_height="match_parent"
-                                android:text="乡村"
+                                android:text="风景"
                                 android:gravity="center"
                                 android:textColor="#000000"/>
                         </LinearLayout>
@@ -128,7 +128,7 @@
                             <CheckedTextView
                                 android:layout_width="60dp"
                                 android:layout_height="match_parent"
-                                android:text="乡村"
+                                android:text="城市"
                                 android:gravity="center"
                                 android:textColor="#000000"/>
                         </LinearLayout>
@@ -159,7 +159,7 @@
                             <CheckedTextView
                                 android:layout_width="60dp"
                                 android:layout_height="match_parent"
-                                android:text="乡村"
+                                android:text="一日游"
                                 android:gravity="center"
                                 android:textColor="#000000"/>
                         </LinearLayout>
@@ -175,7 +175,7 @@
                             <CheckedTextView
                                 android:layout_width="60dp"
                                 android:layout_height="match_parent"
-                                android:text="乡村"
+                                android:text="多日游"
                                 android:gravity="center"
                                 android:textColor="#000000"/>
                         </LinearLayout>
@@ -201,7 +201,7 @@
                             <CheckedTextView
                                 android:layout_width="60dp"
                                 android:layout_height="match_parent"
-                                android:text="乡村"
+                                android:text="跟团"
                                 android:gravity="center"
                                 android:textColor="#000000"/>
                         </LinearLayout>
@@ -217,7 +217,7 @@
                             <CheckedTextView
                                 android:layout_width="60dp"
                                 android:layout_height="match_parent"
-                                android:text="乡村"
+                                android:text="个人游"
                                 android:gravity="center"
                                 android:textColor="#000000"/>
                         </LinearLayout>
@@ -251,11 +251,11 @@
                         android:background="@drawable/tubiao">
                     </View>
                     <Button
-                        android:layout_width="wrap_content"
+                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:text="提交分享"
-                        android:textSize="20sp"
-                        android:background="#40e0d0"
+                        android:textSize="18sp"
+                        android:background="@drawable/button_shape"
                         android:layout_centerHorizontal="true"
                         android:layout_alignParentBottom="true"
                         />

@@ -44,7 +44,6 @@ public class Main2Activity extends AppCompatActivity {
                     fragment3 = new person();
                     transaction.replace(R.id.content, fragment3);
                     transaction.commit();
-
                     return true;
             }
             return false;

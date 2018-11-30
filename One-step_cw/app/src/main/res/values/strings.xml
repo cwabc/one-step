@@ -26,4 +26,18 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
+
+    <string name="start_trace">开始记录</string>
+    <string name="end_trace">结束记录</string>
+    <string name="review">写评论</string>
+    <string name="share">提交分享</string>
+    <string name="related_place">相关的的地点:</string>
+    <string name="comment">\n\t请输入相关评论:</string>
+    <string name="input_place">\t请输入相关的地点</string>
+
+
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+    <string name="share_title">标题:</string>
+
 </resources>

@@ -251,6 +251,7 @@
                         android:background="@drawable/tubiao">
                     </View>
                     <Button
+                        android:id="@+id/tijiaofenxiang"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="提交分享"
