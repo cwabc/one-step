@@ -27,7 +27,7 @@ public class fenxiangkuangAdapter extends RecyclerView.Adapter<fenxiangkuangAdap
 
         public ViewHolder(View view) {
             super(view);
-            ditu = (ImageView) view.findViewById(R.id.ditu);
+            ditu = (ImageView) view.findViewById(R.id.findtupian);
             touxiang = (ImageView) view.findViewById(R.id.touxiang);
             dianzan = (ImageView) view.findViewById(R.id.dianzan);
             pinglun = (ImageView) view.findViewById(R.id.pinglun);

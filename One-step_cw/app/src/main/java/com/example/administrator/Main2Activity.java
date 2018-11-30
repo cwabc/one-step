@@ -1,5 +1,6 @@
 package com.example.administrator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -13,12 +14,11 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
 
-    private home fragment1;
+    //private ditu fragment1;
     private find fragment2;
     private person fragment3;
     private FragmentTransaction transaction;
     private FragmentManager fragmentManager;
-    private String[] data={"我的心愿单","我的分享","我的收藏","设置"};
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -28,10 +28,8 @@ public class Main2Activity extends AppCompatActivity {
             transaction = fragmentManager.beginTransaction();
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    hideFragment(transaction);
-                    fragment1 = new home();
-                    transaction.replace(R.id.content, fragment1);
-                    transaction.commit();
+                    Intent intent = new Intent(Main2Activity.this,ditu.class);
+                    startActivity(intent);
                     return true;
                case R.id.navigation_find:
                     hideFragment(transaction);
@@ -54,12 +52,12 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        fragment1 = new home();
+        //fragment1 = new ditu();
         fragment2 = new find();
         fragment3 = new person();
         fragmentManager = getSupportFragmentManager();
         transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.content, fragment1);
+        transaction.replace(R.id.content, fragment2);
         transaction.commit();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
@@ -67,10 +65,10 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     private void hideFragment(FragmentTransaction transaction) {
-        if (fragment1 != null) {
+      /*  if (fragment1 != null) {
             //transaction.hide(f1);隐藏方法也可以实现同样的效果，不过我一般使用去除
             transaction.remove(fragment1);
-        }
+        }*/
         if (fragment2 != null) {
             //transaction.hide(f2);
             transaction.remove(fragment2);

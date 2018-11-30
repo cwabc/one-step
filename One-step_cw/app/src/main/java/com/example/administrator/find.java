@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.example.administrator.tools.fenxiangkuang;
 import com.example.administrator.tools.fenxiangkuangAdapter;
@@ -33,8 +34,8 @@ public class find extends Fragment implements View.OnTouchListener {
 
     private EditText start_time;
     private EditText end_time;
+    private View vkuanti;
     private List<fenxiangkuang> fenxiangkuangList=new ArrayList<>();
-
     public find() {
         // Required empty public constructor
     }
@@ -45,6 +46,7 @@ public class find extends Fragment implements View.OnTouchListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_find,container,false);
+        vkuanti=inflater.inflate(R.layout.fenxiangkuangti,container,false);
         inittest1();
         RecyclerView recyclerView=(RecyclerView)view.findViewById(R.id.fenxiangliebiao);
         LinearLayoutManager layoutManager=new LinearLayoutManager(this.getActivity());
@@ -62,6 +64,14 @@ public class find extends Fragment implements View.OnTouchListener {
     private void inittest1(){
             fenxiangkuang a=new fenxiangkuang("旅法师","福州大学","2018.11.27","104","26",R.drawable.fuzhoudaxue,R.drawable.touxianglvfa,R.drawable.dianzan1,R.drawable.pinglun,R.drawable.shoucan);
             fenxiangkuangList.add(a);
+            ImageView imageView = (ImageView)vkuanti.findViewById(R.id.findtupian);
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getActivity(),jutipinglun.class);
+                    startActivity(intent);
+                }
+            });
             fenxiangkuang b=new fenxiangkuang("利威尔兵短","闽江学院","2018.11.25","156","32",R.drawable.malatang,R.drawable.touxiangbinzhang,R.drawable.dianzan2,R.drawable.pinglun,R.drawable.shoucang);
             fenxiangkuangList.add(b);
             fenxiangkuang c=new fenxiangkuang("血大板","师大学生街","2018.11.21","170","46",R.drawable.naicha,R.drawable.longnvpu,R.drawable.dianzan2,R.drawable.pinglun,R.drawable.shoucang);

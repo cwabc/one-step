@@ -40,23 +40,21 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="43a61b8649708792f043d820653f650f"/>
-        <service android:name="com.amap.api.location.APSService" >
-        </service>
+            android:value="228669e8f503148c9274a13f9ded2477" />
+
+        <service android:name="com.amap.api.location.APSService"></service>
+
         <provider
+            android:name="android.support.v4.content.FileProvider"
             android:authorities="com.example.gdzc.cameraalbumtest.fileprovider"
-        android:name="android.support.v4.content.FileProvider"
-        android:exported="false"
-        android:grantUriPermissions="true">
-        <meta-data
-        android:name="android.support.FILE_PROVIDER_PATHS"
-        android:resource="@xml/file_paths">
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
 
-    </meta-data>
-</provider>
-
-
-<activity
+        <activity
             android:name=".MainActivity"
             android:launchMode="singleTask">
             <intent-filter>
@@ -76,9 +74,8 @@
         <activity android:name=".setActivity" />
         <activity android:name=".pinglun" />
         <activity android:name=".write_pinglun" />
-        <activity android:name=".ditu"></activity>
+        <activity android:name=".ditu" />
+        <activity android:name=".jutipinglun"></activity>
     </application>
-
-
 
 </manifest>

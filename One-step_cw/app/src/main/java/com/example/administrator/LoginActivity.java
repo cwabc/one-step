@@ -115,7 +115,7 @@ public class LoginActivity extends AppCompatActivity{
                  {
                      t2.setText(password);
                  }
-                WorkThread sendMessage = new WorkThread();
+               WorkThread sendMessage = new WorkThread();
                 sendMessage.start();
                 try {
                     sendMessage.join();
@@ -126,7 +126,7 @@ public class LoginActivity extends AppCompatActivity{
                 state = 0;
                 switch (state){
                     case 0 :{
-                        Intent intent = new Intent(LoginActivity.this,Main2Activity.class);
+                        Intent intent = new Intent(LoginActivity.this,ditu.class);
                         startActivity(intent);
                         break;
                     }

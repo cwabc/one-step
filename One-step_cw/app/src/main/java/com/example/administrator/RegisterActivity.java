@@ -206,7 +206,7 @@ public class RegisterActivity extends AppCompatActivity {
                     responseData = response.body().toString();
                     String answer=analyzeJson.getJsonString(responseData);
                     Log.d("Register",answer);
-                    if(answer.equals("Yes"))
+                    if(answer.equals("success"))
                         stateR2 = 0;
                     if(answer.equals("Ver_Wrong"))
                         stateR2 = 1;

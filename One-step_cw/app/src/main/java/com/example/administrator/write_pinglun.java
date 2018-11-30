@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -27,6 +28,25 @@ public class write_pinglun extends AppCompatActivity {
         setContentView(R.layout.activity_write_pinglun);
         imageView=(ImageView)findViewById(R.id.pingluntupian);
         button=(Button)findViewById(R.id.selectPhoto);
+        Button back = (Button)findViewById(R.id.writepinglunback);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(write_pinglun.this,ditu.class);
+                startActivity(intent);
+            }
+        });
+        Button tijiao = (Button)findViewById(R.id.tijiaopinglun);
+        tijiao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(write_pinglun.this,ditu.class);
+                Toast.makeText(write_pinglun.this,"提交成功",Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+
+            }
+        });
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
