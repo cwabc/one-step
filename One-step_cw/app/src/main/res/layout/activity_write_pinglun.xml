@@ -7,11 +7,16 @@
     tools:context=".write_pinglun">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -90,16 +95,15 @@
 
         </LinearLayout>
 
-        <ScrollView
-            android:id="@+id/xiepinglunjimiangundong"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
+                <ScrollView
+                    android:id="@+id/xiepinglunjimiangundong"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
                 <EditText
                     android:id="@+id/pinglunneirong"
                     android:layout_width="match_parent"
@@ -109,15 +113,21 @@
                     android:layout_marginRight="15dp"
                     android:background="@color/ivory"
                     android:gravity="left|top"
-                    android:hint="(在这里写入评论)" />
+                    android:hint="(在这里写入评论)"
+                    android:minLines="6"
+                    />
 
+                </ScrollView>
                 <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
                     android:id="@+id/pingluntupian"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp" />
+                    android:layout_marginTop="15dp"
+                    android:layout_height="200dp" />
 
             </LinearLayout>
-        </ScrollView>
+
     </LinearLayout>
 
 
