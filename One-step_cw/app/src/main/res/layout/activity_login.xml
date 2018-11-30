@@ -40,7 +40,8 @@
             <AutoCompleteTextView
                 android:id="@+id/email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/aliceblue"
                 android:hint="@string/prompt_ID"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
@@ -52,9 +53,10 @@
                 android:layout_height="wrap_content" />
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/passwordL"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/ivory"
                 android:hint="@string/prompt_password"
                 android:imeActionId="6"
                 android:imeActionLabel="@string/action_sign_in_short"
@@ -83,7 +85,7 @@
                     android:text="@string/remember_pwd" />
 
                 <TextView
-                    android:id="@+id/login_2"
+                    android:id="@+id/loginForgetPwd"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -93,13 +95,13 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/sign_in"
-                style="?android:textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/button_shape"
-                android:text="@string/action_sign_in_short" />
+            android:id="@+id/sign_in"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_shape"
+            android:text="@string/action_sign_in_short" />
 
         </LinearLayout>
     </ScrollView>
